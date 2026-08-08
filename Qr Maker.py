@@ -61,7 +61,6 @@ class QRCodeApp(ctk.CTk):
         self.main_container = ctk.CTkFrame(self, fg_color="transparent")
         self.main_container.pack(fill="both", expand=True, padx=24, pady=24)
 
-        # --- Header Section ---
         self.header_frame = ctk.CTkFrame(
             self.main_container, fg_color="transparent"
         )
@@ -75,7 +74,6 @@ class QRCodeApp(ctk.CTk):
         )
         self.title_label.pack()
 
-        # --- Input Section ---
         self.entry_frame = ctk.CTkFrame(
             self.main_container, fg_color="transparent"
         )
@@ -109,7 +107,6 @@ class QRCodeApp(ctk.CTk):
         )
         self.generate_btn.pack(fill="x", pady=(0, 16))
 
-        # --- Preview Card Section ---
         self.preview_card = ctk.CTkFrame(
             self.main_container,
             corner_radius=16,
@@ -127,7 +124,6 @@ class QRCodeApp(ctk.CTk):
         )
         self.qr_label.pack(expand=True, fill="both", padx=16, pady=16)
 
-        # --- Status Banner ---
         self.status_banner = ctk.CTkFrame(
             self.main_container,
             height=36,
@@ -144,7 +140,6 @@ class QRCodeApp(ctk.CTk):
         )
         self.status_label.pack(expand=True)
 
-        # --- Action Buttons Grid ---
         self.actions_frame = ctk.CTkFrame(
             self.main_container, fg_color="transparent"
         )
